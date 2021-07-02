@@ -5,6 +5,10 @@
 
 .heading-1 {
   @extend %heading;
+  font-size: 4rem;
+  color: $color-grey-light-1;
+  line-height: 1;
+  text-align: center;
 }
 .heading-2 {
   @extend %heading;

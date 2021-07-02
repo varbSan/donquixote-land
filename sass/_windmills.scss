@@ -1,6 +1,7 @@
 .windmills {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
+  // margin: 15rem 0;
+  padding: 15rem 0;
   
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -11,9 +12,15 @@
   background: $color-grey-light-1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  aspect-ratio: 1 / 1;
   grid-row-gap: 3.5rem;
   border-radius: .5rem;
+
+  transition: all 200ms;
+
+  &:hover {
+    transform: rotate(-2deg) scale(1.05);
+    box-shadow: 0 1rem 2.5rem rgba($color-primary-dark, .5);
+  }
   
   &__img {
     width: 100%;
@@ -24,6 +31,7 @@
     border-top-right-radius: .5rem;
   }
   &__like {
+    cursor: pointer;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     fill: $color-primary;
@@ -32,6 +40,10 @@
     z-index: 2;
     justify-self: end;
     margin: 1rem;
+    transition: all 200ms;
+    &:hover {
+      fill: $color-primary-dark;
+    }
   }
   &__name {
     grid-row: 1 / 2;
