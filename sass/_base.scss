@@ -1,14 +1,14 @@
 // COLOR VARIABLES
-$color-primary: #c69963; // hsl(51, 100%, 50%); // Gold Web Golden
-$color-primary-dark: #B28451; // hsl(51, 95%, 39%); // Metallic Gold
+$color-primary: hsl(51, 100%, 47%); // Yellow (Munsell) // #c69963;
+$color-primary-dark: hsl(51, 95%, 40%); // Metallic Gold // #B28451; 
 
-$color-secondary: #101d2c; // hsl(0, 0%, 7%); // Rich Black
+$color-secondary: hsl(0, 0%, 7%); // Rich Black // #101d2c; 
 
 $color-grey-light-1: #f9f7f6; 
 $color-grey-light-2: #aaa;
 
-$color-grey-dark-1: #54483A; // hsl(51, 88%, 29%); // Spanish Bistre
-$color-grey-dark-2: #6D5D4B; // hsl(51, 70%, 18%); // Army Green
+$color-grey-dark-1: hsl(51, 88%, 29%); // Spanish Bistre // #54483A;
+$color-grey-dark-2: hsl(51, 70%, 18%); // Army Green // #6D5D4B;
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
