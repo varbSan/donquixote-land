@@ -6,6 +6,13 @@
   justify-content: center;
   align-content: start;
 
+  @media only screen and (max-width: $bp-large) {
+   grid-column: 1 / -1;
+   grid-row: 1 / 2;
+   justify-content: end;
+   align-items: center;
+  }
+
   .nav-btn {
     border: none;
     border-radius: 0;
@@ -26,10 +33,10 @@
 
     &:hover > .btn__element:nth-child(odd) {
       transform: rotate(360deg);
-      animation: rotate 1000ms infinite;
+      animation: fullRotation 1000ms infinite;
     }
 
-    @keyframes rotate {
+    @keyframes fullRotation {
       0% {
         transform: rotate(0deg)
       }
@@ -38,16 +45,9 @@
       }
     }
 
-  //   &::before,
-  //   &::after {
-  //     content: "";
-  //     background-color: #fff;
-  //     height: .5rem;
-  //     width: 4.5rem;
-  //     display: block;
-  //   }
-
-  //   &::before { transform: translateY(-1.5rem);}
-  //   &::after { transform: translateY(1rem);}  
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 1.3rem;
+      margin-right: 1.5rem
+    }
   }
 }
