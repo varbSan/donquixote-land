@@ -4,7 +4,7 @@
   "description": "The Den of Windmill Bounty Hunters",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css --watch",
+    "watch:sass": "node-sass public/sass/main.scss public/css/style.css --watch",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
